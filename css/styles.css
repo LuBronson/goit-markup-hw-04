@@ -115,6 +115,31 @@ img {
     margin-right: 332px;
 }
 
+/* ???????????? */
+.link-active::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    background: #404BBF;
+    border-radius: 2px;
+    margin-top: 20px;
+    color: #404BBF;
+}
+
+.link-active-portfolio::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 66px;
+    height: 4px;
+    background: #404BBF;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+/* ???????????????? */
 .nav-list {
     display: flex;
     gap: 40px;
@@ -176,8 +201,12 @@ img {
 
 /* 1 Section Title block */
 .title-block {
-    background: #2E2F42;
+    max-width: 1440px;
     padding: 188px 0;
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/title-bg.jpg);
+    background-color: #2E2F42;
+
 }
 
 .title-container {
@@ -236,19 +265,7 @@ img {
 
 /* 2 Section about */
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
 
 .about {
     padding: 120px 0;
@@ -266,8 +283,8 @@ img {
 .about-list {
     display: flex;
     gap: 24px;
-    max-height: 104px;
     padding-left: 0;
+    align-items: center;
 }
 
 .about-list-item {
@@ -288,6 +305,15 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navbar-contacts-color);
+}
+
+/* icon about */
+.about-icon {
+    display: flex;
+    justify-content: center;
+    background-color: #F4F4FD;
+    padding: 24px 0;
+    border-radius: 4px;
 }
 
 /* 3 Section work */
@@ -341,9 +367,7 @@ img {
 .team-list {
     display: flex;
     gap: 24px;
-
     padding-left: 0;
-
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -352,6 +376,8 @@ img {
     text-align: center;
     background: #FFFFFF;
     width: calc((100% - 3 * 24px) / 4);
+
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -377,6 +403,66 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     margin: 0;
+    margin-bottom: 8px;
+}
+
+.team-icon {
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    top: 30%;
+    bottom: 30%;
+    max-width: 16px;
+    max-height: 16px;
+}
+
+.team-icon-bg {
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.team-icon-bg:hover {
+    background-color: #404BBF;
+    ;
+}
+
+.team-block-icon {
+    display: flex;
+    gap: 24px;
+}
+
+/* Section customers */
+.customers {
+    padding: 120px 0;
+}
+
+.customers-block-icon {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.block-icon {
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+    padding: 16px 32px;
+}
+
+.block-icon:hover {
+    border: 1px solid #404BBF;
+}
+
+.logo-customers {
+    width: 104px;
+    height: 56px;
+    fill: #0015ff;
 }
 
 /*=============================================
@@ -415,6 +501,54 @@ img {
     max-width: 264px;
     margin: 0;
 }
+
+.footer-container {
+    display: flex;
+    gap: 120px;
+}
+
+.footer-icon-bg {
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.footer-icon-bg:hover {
+    background-color: #31D0AA;
+}
+
+.footer-icon {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    bottom: 20%;
+    max-width: 24px;
+    max-height: 24px;
+}
+
+.footer-icon-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 16px;
+}
+
+.footer-social-title {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1, 5;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.block-footer-icon {}
 
 /*=============================================
 =               Portfolio page                =
@@ -473,7 +607,18 @@ img {
 }
 
 .row-list-item {
-    width: calc((100% - 48px)/3)
+    width: calc((100% - 48px)/3);
+}
+
+
+
+
+
+.row-list-item:hover,
+.row-list-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-card-container {
@@ -499,3 +644,88 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+
+/* overlay */
+.overlay-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5ec;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+    /* text */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+}
+
+.row-list-item:hover .overlay {
+    transform: translateY(0);
+}
+
+
+
+
+
+
+/* modal?????????????????????????? */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.modal {
+    position: absolute;
+    width: 408px;
+    height: 584px;
+    background: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: unset;
+    pointer-events: fill;
+}
+
+.backdrop {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: rgba(46, 47, 66, 0.4);
+}
+
+.close-btn {
+    width: 24px;
+    height: 24px;
+    left: 876px;
+    top: 104px;
+}
+
+/* modal????????????????? */

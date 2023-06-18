@@ -27,7 +27,8 @@
             <nav class="nav-block">
                 <a href="./index.html" class="logo link">Web<span class="header-logo-studio">Studio</span></a>
                 <ul class="list nav-list">
-                    <li> <a href="./index.html" class="nav-link link">Studio</a>
+                    <li> <a href="./index.html" class="nav-link link link-active">Studio</a>
+                        <div class="nav-link-active"></div>
                     </li>
                     <li> <a href="./portfolio.html" class="nav-link link">Portfolio</a>
                     </li>
@@ -47,15 +48,33 @@
         </div>
     </header>
 
+
     <!-- Main -->
     <main>
+        <!-- modal ?????????????????????-->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Consequuntur, quibusdam excepturi odio animi tempora labore minima quo maxime cumque.
+                    Consequuntur
+                    quia
+                    autem, incidunt omnis dolorem libero?
+                    Voluptatum quaerat similique impedit.
+                </p>
+                <button data-modal-close class="close-btn">close</button>
+            </div>
+        </div>
+        <!-- ??????????????????????????????? -->
+
         <section class="section title-block">
+
             <div class="container title-container">
                 <h1 class="title-text">Effective Solutions for Your Business</h1>
-                <button type="button" class="title-button">
+                <button type="button" class="title-button" data-modal-open>
                     Order Service
                 </button>
             </div>
+
         </section>
 
         <!-- Section 2 -->
@@ -65,11 +84,21 @@
                 <h2 class="about-title visually-hidden">Effective tips</h2>
                 <ul class="list about-list">
                     <li class="about-list-item">
+                        <div class="about-icon">
+                            <svg class="icon" width="64" height="64">
+                                <use href="./images/icons.svg#antenna1"></use>
+                            </svg>
+                        </div>
                         <h3 class="section-about-title">Strategy</h3>
                         <p class="section-about-text">Our goal is to identify the business
                             problem to walk away with the perfect and creative solution.</p>
                     </li>
                     <li class="about-list-item">
+                        <div class="about-icon">
+                            <svg class="icon" width="64" height="64">
+                                <use href="./images/icons.svg#clock1"></use>
+                            </svg>
+                        </div>
                         <h3 class="section-about-title">Punctuality</h3>
                         <p class="section-about-text">Bring the key message to the brand's audience for the best price
                             within the
@@ -77,6 +106,11 @@
                             time.</p>
                     </li>
                     <li class="about-list-item">
+                        <div class="about-icon">
+                            <svg class="icon" width="64" height="64">
+                                <use href="./images/icons.svg#diagram1"></use>
+                            </svg>
+                        </div>
                         <h3 class="section-about-title">Diligence</h3>
                         <p class="section-about-text">Research and confirm brands that present the strongest digital
                             growth
@@ -85,6 +119,11 @@
                             risk.</p>
                     </li>
                     <li class="about-list-item">
+                        <div class="about-icon">
+                            <svg class="icon" width="64" height="64">
+                                <use href="./images/icons.svg#astronaut1"></use>
+                            </svg>
+                        </div>
                         <h3 class="section-about-title">Technologies</h3>
                         <p class="section-about-text">Design practice focused on digital experiences. We bring forth a
                             deep
@@ -123,6 +162,48 @@
                         <div class="team-card-container">
                             <h3 class="team-list-name">Mark Guerrero</h3>
                             <p class="team-list-text">Product Designer</p>
+                            <!-- icon block -->
+                            <div class="team-block-icon">
+                                <!-- instagram -->
+                                <a href="https://www.instagram.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#instagram2" width="16" height="16">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <!-- twitter -->
+                                <a href="https://www.twitter.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#twitter1" width="16" height="16">
+                                            </use>
+                                        </svg>
+
+                                    </div>
+                                </a>
+                                <!-- facebook -->
+                                <a href="https://www.facebook.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#facebook1" width="16" height="16">
+                                            </use>
+                                        </svg>
+
+                                    </div>
+                                </a>
+                                <!-- linkedin -->
+                                <a href="https://www.linkedin.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#linkedin1" width="16" height="16">
+                                            </use>
+                                        </svg>
+
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </li>
                     <li class="team-list-item"><img src="./images/Tom_Ford.jpg" alt="Tom Ford Frontend Developer"
@@ -130,6 +211,45 @@
                         <div class="team-card-container">
                             <h3 class="team-list-name">Tom Ford</h3>
                             <p class="team-list-text">Frontend Developer</p>
+                            <!-- icon block -->
+                            <div class="team-block-icon">
+                                <!-- instagram -->
+                                <a href="https://www.instagram.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#instagram2" width="16" height="16">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <!-- twitter -->
+                                <a href="https://www.twitter.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#twitter1" width="16" height="16">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <!-- facebook -->
+                                <a href="https://www.facebook.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#facebook1" width="16" height="16">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <!-- linkedin -->
+                                <a href="https://www.linkedin.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#linkedin1" width="16" height="16">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </li>
                     <li class="team-list-item"><img src="./images/Camila_Garcia.jpg" alt="Camila Garcia Marketing"
@@ -137,6 +257,45 @@
                         <div class="team-card-container">
                             <h3 class="team-list-name">Camila Garcia</h3>
                             <p class="team-list-text">Marketing</p>
+                            <!-- icon block -->
+                            <div class="team-block-icon">
+                                <!-- instagram -->
+                                <a href="https://www.instagram.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#instagram2" width="16" height="16">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <!-- twitter -->
+                                <a href="https://www.twitter.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#twitter1" width="16" height="16">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <!-- facebook -->
+                                <a href="https://www.facebook.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#facebook1" width="16" height="16">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <!-- linkedin -->
+                                <a href="https://www.linkedin.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#linkedin1" width="16" height="16">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </li>
                     <li class="team-list-item"><img src="./images/Daniel_Wilson.jpg" alt="Daniel Wilson UI Designer"
@@ -144,24 +303,186 @@
                         <div class="team-card-container">
                             <h3 class="team-list-name">Daniel Wilson</h3>
                             <p class="team-list-text">UI Designer</p>
+                            <!-- icon block -->
+                            <div class="team-block-icon">
+                                <!-- instagram -->
+                                <a href="https://www.instagram.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#instagram2" width="16" height="16">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <!-- twitter -->
+                                <a href="https://www.twitter.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#twitter1" width="16" height="16">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <!-- facebook -->
+                                <a href="https://www.facebook.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#facebook1" width="16" height="16">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <!-- linkedin -->
+                                <a href="https://www.linkedin.com">
+                                    <div class="icon team-icon-bg">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#linkedin1" width="16" height="16">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
+        </section>
+        <section class="section customers">
+            <h2 class="team-title">Customers</h2>
+            <div>
+                <ul class="customers-block-icon">
+                    <li>
+                        <a href="" class="link">
+                            <div class="block-icon">
+                                <svg class="logo-customers">
+                                    <use href="./images/icons.svg#logo1"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="link">
+                            <div class="block-icon">
+                                <svg class="logo-customers">
+                                    <use href="./images/icons.svg#logo2"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="link">
+                            <div class="block-icon">
+                                <svg class="logo-customers">
+                                    <use href="./images/icons.svg#logo3"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="link">
+                            <div class="block-icon">
+                                <svg class="logo-customers">
+                                    <use href="./images/icons.svg#logo4"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="link">
+                            <div class="block-icon">
+                                <svg class="logo-customers">
+                                    <use href="./images/icons.svg#logo5"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="link">
+                            <div class="block-icon">
+                                <svg class="logo-customers">
+                                    <use href="./images/icons.svg#logo6"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+
         </section>
 
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <a href="./index.html" class="footer-logo footer-link">Web<span class="footer-logo-studio">Studio</span>
-            </a>
-            <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing &
-                growth solutions.</p>
+        <div class="container footer-container">
+            <div>
+                <a href="./index.html" class="footer-logo footer-link">Web<span class="footer-logo-studio">Studio</span>
+                </a>
+                <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing
+                    &
+                    growth solutions.</p>
+            </div>
+            <div class="block-footer-icon">
+
+                <h3 class="footer-social-title">Social media</h3>
+
+                <ul class="footer-icon-list">
+                    <li>
+                        <a href="https://www.instagram.com">
+                            <div class="icon footer-icon-bg">
+                                <svg class="footer-icon">
+                                    <use href="./images/icons.svg#instagram-footer" width="24" height="24">
+                                    </use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com">
+                            <div class="icon footer-icon-bg">
+                                <svg class="footer-icon">
+                                    <use href="./images/icons.svg#twitter-footer" width="24" height="24">
+                                    </use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com">
+                            <div class="icon footer-icon-bg">
+                                <svg class="footer-icon">
+                                    <use href="./images/icons.svg#facebook-footer" width="24" height="24">
+                                    </use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com">
+                            <div class="icon footer-icon-bg">
+                                <svg class="footer-icon">
+                                    <use href="./images/icons.svg#linkedin-footer" width="24" height="24">
+                                    </use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
         </div>
     </footer>
 
+
+
+    <!-- modal -->
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
