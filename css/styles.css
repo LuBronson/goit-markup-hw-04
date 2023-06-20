@@ -740,11 +740,14 @@ img {
     position: absolute;
     width: 408px;
     height: 584px;
-    top: 80px;
-    left: calc(50% - 205px);
+
+    top: 50%;
+    left: 50%;
+
     cursor: default;
     display: flex;
     justify-content: end;
+    transform: translate(-50%, -50%);
 
 
     background: #FCFCFC;
