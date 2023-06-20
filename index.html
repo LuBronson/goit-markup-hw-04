@@ -19,7 +19,23 @@
 </head>
 
 <body>
+    <!-- modal ?????????????????????-->
+    <div class="modal-container">
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal-active">
+                <p>
+                </p>
+                <button data-modal-close class="close-btn">
 
+                    <svg class="logo close-btn-svg" width="8px" height="8px">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- ??????????????????????????????? -->
     <!-- Header -->
     <header class="header">
         <div class="container header-container">
@@ -51,20 +67,7 @@
 
     <!-- Main -->
     <main>
-        <!-- modal ?????????????????????-->
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Consequuntur, quibusdam excepturi odio animi tempora labore minima quo maxime cumque.
-                    Consequuntur
-                    quia
-                    autem, incidunt omnis dolorem libero?
-                    Voluptatum quaerat similique impedit.
-                </p>
-                <button data-modal-close class="close-btn">close</button>
-            </div>
-        </div>
-        <!-- ??????????????????????????????? -->
+
 
         <section class="section title-block">
 
@@ -355,7 +358,7 @@
                         <a href="" class="link">
                             <div class="block-icon">
                                 <svg class="logo-customers">
-                                    <use href="./images/icons.svg#logo1"></use>
+                                    <use class="team-icon-use" href="./images/icons.svg#logo1"></use>
                                 </svg>
                             </div>
                         </a>
