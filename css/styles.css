@@ -136,7 +136,7 @@ img {
     border-radius: 2px;
     color: #404bbf;
     left: 0;
-    bottom: -1px;
+    bottom: -4px;
 }
 
 .link-active-portfolio::after {
@@ -147,7 +147,7 @@ img {
     background: #404bbf;
     border-radius: 2px;
     left: 0;
-    bottom: -1px;
+    bottom: -4px;
 }
 
 /* ???????????????? */
@@ -562,8 +562,6 @@ img {
 .footer {
     background: #2E2F42;
     padding: 100px 0;
-    padding-left: 100px;
-
 }
 
 .footer-logo {
@@ -795,12 +793,6 @@ img {
     position: relative;
     overflow: hidden;
 }
-
-
-
-
-
-
 
 /* modal */
 
